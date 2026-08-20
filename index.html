@@ -1,10 +1,8 @@
-<!doctype html>
-<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Persian Speakers English Support</title>
-<meta name="description" content="Online English support for Persian and Farsi speakers: private sessions, Saturday group class, exam preparation and practical English skills.">
+<meta name="description" content="A free, informal online English support space for Persian/Farsi speakers, offering one-to-one help, weekly group sessions, exam preparation and practical English guidance.">
 <style>
 :root {
   --navy:#273678;
@@ -211,6 +209,55 @@ footer{padding:28px 0 35px;border-top:1px solid var(--line);color:var(--muted);f
   .form-grid{grid-template-columns:1fr}
 }
 </style>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#273678">
+<meta property="og:type" content="website">
+<meta property="og:title" content="English Support for Persian (Farsi) Speakers">
+<meta property="og:description" content="A free, informal online English support space for Persian/Farsi speakers, offering one-to-one help, weekly group sessions, exam preparation and practical English guidance.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="English Support for Persian (Farsi) Speakers">
+<meta name="twitter:description" content="A free, informal online English support space for Persian/Farsi speakers, offering one-to-one help, weekly group sessions, exam preparation and practical English guidance.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Persian Speakers English Support",
+  "alternateName": "پشتیبانی زبان انگلیسی برای فارسی‌زبانان",
+  "description": "A free, informal online English support space for Persian/Farsi speakers, offering one-to-one help, weekly group sessions, exam preparation and practical English guidance.",
+  "serviceType": "Online English-language learning support",
+  "areaServed": "Worldwide",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Persian and Farsi speakers"
+  },
+  "provider": {
+    "@type": "Person",
+    "name": "Pezhman Farhangi",
+    "alternateName": "Peter Far"
+  },
+  "availableLanguage": [
+    "English",
+    "Persian"
+  ],
+  "@id": "https://iusmusic.github.io/English-Course/#service",
+  "url": "https://iusmusic.github.io/English-Course/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://iusmusic.github.io/English-Course/#webpage",
+    "url": "https://iusmusic.github.io/English-Course/",
+    "name": "English Support for Persian (Farsi) Speakers",
+    "inLanguage": [
+      "en",
+      "fa"
+    ]
+  }
+}
+</script>
+<link rel="canonical" href="https://iusmusic.github.io/English-Course/">
+<meta property="og:url" content="https://iusmusic.github.io/English-Course/">
 </head>
 <body>
 
@@ -240,8 +287,8 @@ footer{padding:28px 0 35px;border-top:1px solid var(--line);color:var(--muted);f
     <div>
       <h1>English support for<br><span class="accent">Persian (Farsi)</span> speakers</h1>
       <div class="hero-fa-title fa">پشتیبانی زبان انگلیسی برای فارسی‌زبانان، در هر کجا که هستید</div>
-      <p class="hero-copy">Practical online English support for Persian/Farsi speakers of all backgrounds and levels.</p>
-      <p class="hero-copy-fa fa">پشتیبانی آنلاین و کاربردی زبان انگلیسی برای فارسی‌زبانان با هر سطح و پیشینه‌ای.</p>
+      <p class="hero-copy">A free, informal online English support space for Persian/Farsi speakers, offering one-to-one help, weekly group sessions, exam preparation and practical English guidance.</p>
+      <p class="hero-copy-fa fa">فضایی رایگان و غیررسمی برای پشتیبانی آنلاین زبان انگلیسی فارسی‌زبانان، شامل جلسات خصوصی، کلاس گروهی هفتگی، آمادگی آزمون و راهنمایی کاربردی زبان انگلیسی.</p>
 
       <div class="hero-features">
         <div class="mini-feature"><div class="circle">1:1</div><div><strong>1-to-1 Sessions</strong><div class="fa">جلسات خصوصی</div></div></div>
@@ -694,20 +741,9 @@ footer{padding:28px 0 35px;border-top:1px solid var(--line);color:var(--muted);f
     const exam = document.getElementById("exam").value;
     const contribution = document.getElementById("contribution").value;
     const recording = document.getElementById("recordingConsent").checked ? "Yes" : "No";
-    const record = {
-      createdAt:new Date().toISOString(),
-      name,email,topic,exam,contribution,recording,
-      mode,
-      date:selected ? selected.toISOString().slice(0,10) : null
-    };
-
-    const existing = JSON.parse(localStorage.getItem("pses_demo_bookings") || "[]");
-    existing.push(record);
-    localStorage.setItem("pses_demo_bookings", JSON.stringify(existing));
-
-    confirmBox.innerHTML = `<strong>Booking request saved in this browser.</strong><br>
-      This prototype is fully interactive, but it does not yet send data to Peter. Connect the final site to a booking provider or backend before publishing.
-      <div class="fa small-fa">درخواست رزرو در این مرورگر ذخیره شد. برای نسخه نهایی باید فرم به سامانه رزرو یا سرور متصل شود.</div>`;
+    confirmBox.innerHTML = `<strong>Booking request prepared.</strong><br>
+      This static page does not send booking data to a server yet. Connect the booking button to your chosen booking service before accepting live bookings.
+      <div class="fa small-fa">این صفحه هنوز اطلاعات رزرو را به سرور ارسال نمی‌کند. پیش از پذیرش رزرو واقعی، آن را به سامانه رزرو موردنظر متصل کنید.</div>`;
     confirmBox.classList.add("show");
   });
 

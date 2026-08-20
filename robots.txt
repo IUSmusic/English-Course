@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iusmusic.github.io/English-Course/sitemap.xml
